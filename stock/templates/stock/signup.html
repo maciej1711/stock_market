@@ -1,0 +1,11 @@
+{% extends 'stock/login.html' %}
+{% block content %}
+<div class="card-header">Sign Up</div>
+    <div class="card-body">
+        <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button class="btn btn-primary btn-block" type="submit">Sign up</button>
+  </form>
+    </div>
+{% endblock %}

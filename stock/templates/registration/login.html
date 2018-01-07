@@ -1,0 +1,17 @@
+{% extends 'stock/log_base.html' %}
+{% block content %}
+
+<div>
+<div class="card-header">Login</div>
+
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+    <button class="btn btn-primary btn-block" type="submit" action="/index">Login</button>
+</form>
+        <div class="text-center">
+          <a class="d-block small mt-3" href="/signup">Register an Account</a>
+        </div>
+</div>
+<p></p>
+{% endblock content%}
