@@ -8,3 +8,4 @@ Objectives:
 - Use Celery for continuous communication with stock market API
 - Use Python3
 - Use Seaborn and Pandas for data presentation layer.
+- Use Bootsrap for the website presentation layer.
